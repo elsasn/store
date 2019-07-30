@@ -45,6 +45,12 @@ if ($_GET['form']=='add') { ?>
                 <input type="text" class="form-control" name="id_pelanggan" value="<?php echo $id_pelanggan; ?>" readonly required>
               </div>
             </div>
+             <div class="form-group">
+              <label class="col-sm-2 control-label">Nama pelanggan</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" name="nama_pelanggan" autocomplete="off" required>
+              </div>
+            </div>
             <div class="form-group">
               <label class="col-sm-2 control-label">E -  Mail pelanggan</label>
               <div class="col-sm-5">
@@ -57,12 +63,7 @@ if ($_GET['form']=='add') { ?>
                 <input type="password" class="form-control" name="password_pelanggan" autocomplete="off" required>
               </div>
             </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Nama pelanggan</label>
-              <div class="col-sm-5">
-                <input type="text" class="form-control" name="nama_pelanggan" autocomplete="off" required>
-              </div>
-            </div>
+          
             <div class="form-group">
               <label class="col-sm-2 control-label">No Telp</label>
               <div class="col-sm-5">
@@ -75,7 +76,7 @@ if ($_GET['form']=='add') { ?>
             <div class="form-group">
               <label class="col-sm-2 control-label">Alamat</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control" name="alamat_pelanggan" autocomplete="off" required>
+                <input type="text" class="form-control" name="alamat" autocomplete="off" required>
               </div>
             </div>
             
@@ -134,38 +135,39 @@ if ($_GET['form']=='add') { ?>
                           </div>
                         </div>
                         <div class="form-group">
-                          <label class="col-sm-2 control-label">E -  Mail pelanggan</label>
-                          <div class="col-sm-5">
-                            <input type="text" class="form-control" name="email_pelanggan" autocomplete="off" required>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">Password pelanggan</label>
-                          <div class="col-sm-5">
-                            <input type="password" class="form-control" name="password_pelanggan" autocomplete="off" required>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">Nama pelanggan</label>
-                          <div class="col-sm-5">
-                            <input type="text" class="form-control" name="nama_pelanggan" autocomplete="off" required>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">No Telp</label>
-                          <div class="col-sm-5">
-                            <div class="input-group">
-                              <span class="input-group-addon"></span>
-                              <input type="text" class="form-control" id="no_telp" name="no_telp" autocomplete="off" onKeyPress="return goodchars(event,'0123456789',this)" required>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">Alamat</label>
-                          <div class="col-sm-5">
-                            <input type="text" class="form-control" name="alamat_pelanggan" autocomplete="off" required>
-                          </div>
-                        </div>
+              <label class="col-sm-2 control-label">Nama pelanggan</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" name="nama_pelanggan" autocomplete="off" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">E -  Mail pelanggan</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" name="email_pelanggan" autocomplete="off" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Password pelanggan</label>
+              <div class="col-sm-5">
+                <input type="password" class="form-control" name="password_pelanggan" autocomplete="off" required>
+              </div>
+            </div>
+          
+            <div class="form-group">
+              <label class="col-sm-2 control-label">No Telp</label>
+              <div class="col-sm-5">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" id="no_telp" name="no_telp" autocomplete="off" onKeyPress="return goodchars(event,'0123456789',this)" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Alamat</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" name="alamat" autocomplete="off" required>
+              </div>
+            </div>
                         
                         
                         </div><!-- /.box body -->

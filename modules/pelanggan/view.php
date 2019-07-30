@@ -61,9 +61,9 @@
               <tr>
                 <th class="center">No.</th>
                 <th class="center">ID Pelanggan</th>
+                <th class="center">Nama Pelanggan</th>
                 <th class="center">E - Mail Pelanggan</th>
                 <th class="center">Password Pelanggan</th>
-                <th class="center">Nama Pelanggan</th>
                 <th class="center">No Telp</th>
                 <th class="center">Alamat</th>
                
@@ -87,11 +87,11 @@
               echo "<tr>
                       <td width='50' class='center'>$no</td>
                       <td width='150' class='center'>$data[id_pelanggan]</td>
+                      <td width='100'class='center'>$data[nama_pelanggan]</td>
                       <td width='100'class='center'>$data[email_pelanggan]</td>
                       <td width='100'class='center'>$data[password_pelanggan]</td>
-                      <td width='180'class='center'>$data[nama_pelanggan]</td>
                       <td width='200' class='center'>$data[no_telp]</td>
-                      <td width='200'class='center'>$data[alamat_pelanggan]</td>
+                      <td width='200'class='center'>$data[alamat]</td>
                       <td class='center' width='100'>
                         <div>
                           <a data-toggle='tooltip' data-placement='top' title='Ubah' style='margin-right:5px' class='btn btn-primary btn-sm' href='?module=form_pelanggan&form=edit&id=$data[id_pelanggan]'>
