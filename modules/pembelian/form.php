@@ -310,7 +310,7 @@ $(document).ready(function() {
 $('#id_produk').on('change', function(){
 var id_produk=$('#id_produk').val();
 //console.log(id_produk);
-var link="http://localhost/travel/modules/pembelian/cek_data.php?id_produk="+id_produk;
+var link="http://localhost/store/modules/pembelian/cek_data.php?id_produk="+id_produk;
 //console.log(link);
 // url for ajax http://localhost/travel/modules/pembelian/cek_data.php?id_produk=JDWL-000001
 $.ajax({
@@ -319,9 +319,9 @@ success:function(dt){
 data=JSON.parse(dt);
 // data iku isine object json key harga: xxxxk
 $('#harga').attr('value', data.harga);
-$('#jumlah').attr('data-max', data.kapasitas);
-$('#jumlah').attr('max', data.kapasitas);
-$('#jumlah').attr('placeholder', 'max-'+data.kapasitas);
+$('#jumlah').attr('data-max', data.stok);
+$('#jumlah').attr('max', data.stok);
+$('#jumlah').attr('placeholder', 'max-'+data.stok);
 }
 });
 });

@@ -6032,17 +6032,14 @@ DROP TABLE IF EXISTS `pelanggan`;
 CREATE TABLE `pelanggan` (
   `id_pelanggan` varchar(20) NOT NULL,
   `nama_pelanggan` varchar(20) DEFAULT NULL,
-  `jenis_kelamin` varchar(20) DEFAULT NULL,
-  `alamat` varchar(50) DEFAULT NULL,
-  `no_telp` int(20) DEFAULT NULL,
+  `email_pelanggan` varchar(20) DEFAULT NULL,
+  `password_pelanggan` varchar(50) DEFAULT NULL,
+  `no_telp` varchar(20) DEFAULT NULL,
+  `alamat` text,
   PRIMARY KEY (`id_pelanggan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pelanggan` */
-
-insert  into `pelanggan`(`id_pelanggan`,`nama_pelanggan`,`jenis_kelamin`,`alamat`,`no_telp`) values 
-('PLG-000002','fsf','Laki-laki','sdfsf',32432),
-('PLG-000003','jhj','Perempuan','khh',868);
 
 /*Table structure for table `pembayaran` */
 
