@@ -16,6 +16,22 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`toko` /*!40100 DEFAULT CHARACTER SET la
 
 USE `toko`;
 
+/*Table structure for table `cart` */
+
+DROP TABLE IF EXISTS `cart`;
+
+CREATE TABLE `cart` (
+  `id_cart` int(11) NOT NULL AUTO_INCREMENT,
+  `id_produk` varchar(20) DEFAULT NULL,
+  `nama` varchar(20) DEFAULT NULL,
+  `harga` float DEFAULT NULL,
+  `stok` int(11) DEFAULT NULL,
+  `jumlah` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_cart`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `cart` */
+
 /*Table structure for table `data_user` */
 
 DROP TABLE IF EXISTS `data_user`;
@@ -5961,9 +5977,9 @@ CREATE TABLE `is_users` (
 /*Data for the table `is_users` */
 
 insert  into `is_users`(`id_user`,`username`,`nama_user`,`password`,`email`,`telepon`,`foto`,`hak_akses`,`status`,`created_at`,`updated_at`) values 
-(1,'superadmin','superadmin','17c4520f6cfd1ab53d8745e84681eb49','superadmin@gmail.com','085669919769','user-default.png','Super Admin','aktif','2017-04-02 05:15:15','2019-01-26 07:00:23'),
-(2,'kadina','Kadina Putri','202cb962ac59075b964b07152d234b70','kadinaputri@gmail.com','085680892909','kadina.png','Manajer','aktif','2017-04-02 05:15:15','2017-04-02 05:15:15'),
-(3,'danang','Danang Kesuma','202cb962ac59075b964b07152d234b70','danang@gmail.com','085758858855','','Gudang','aktif','2017-04-02 05:15:15','2017-04-02 05:15:15');
+(1,'superadmin','superadmin','17c4520f6cfd1ab53d8745e84681eb49','superadmin@gmail.com','085669919769','user-default.png','Super Admin','aktif','2017-04-02 19:15:15','2019-01-26 22:00:23'),
+(2,'kadina','Kadina Putri','202cb962ac59075b964b07152d234b70','kadinaputri@gmail.com','085680892909','kadina.png','Manajer','aktif','2017-04-02 19:15:15','2017-04-02 19:15:15'),
+(3,'danang','Danang Kesuma','202cb962ac59075b964b07152d234b70','danang@gmail.com','085758858855','','Gudang','aktif','2017-04-02 19:15:15','2017-04-02 19:15:15');
 
 /*Table structure for table `karyawan` */
 
@@ -6032,10 +6048,9 @@ DROP TABLE IF EXISTS `pelanggan`;
 CREATE TABLE `pelanggan` (
   `id_pelanggan` varchar(20) NOT NULL,
   `nama_pelanggan` varchar(20) DEFAULT NULL,
-  `email_pelanggan` varchar(20) DEFAULT NULL,
-  `password_pelanggan` varchar(50) DEFAULT NULL,
-  `no_telp` varchar(20) DEFAULT NULL,
-  `alamat` text,
+  `jenis_kelamin` varchar(20) DEFAULT NULL,
+  `alamat` varchar(50) DEFAULT NULL,
+  `no_telp` int(20) DEFAULT NULL,
   PRIMARY KEY (`id_pelanggan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -6088,6 +6103,23 @@ CREATE TABLE `pengiriman` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pengiriman` */
+
+/*Table structure for table `penjualan` */
+
+DROP TABLE IF EXISTS `penjualan`;
+
+CREATE TABLE `penjualan` (
+  `nonota` varchar(8) NOT NULL,
+  `tanggal` date NOT NULL,
+  `total` int(8) NOT NULL,
+  PRIMARY KEY (`nonota`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `penjualan` */
+
+insert  into `penjualan`(`nonota`,`tanggal`,`total`) values 
+('1','2013-01-17',55000),
+('2','2019-07-31',110000);
 
 /*Table structure for table `produk` */
 
