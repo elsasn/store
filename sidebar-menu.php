@@ -32,7 +32,6 @@ if ($_SESSION['hak_akses']=='Super Admin') { ?>
       <li><a href="?module=pelanggan"><i class="fa fa-circle-o"></i> Pelanggan </a></li>
       <li><a href="?module=produk"><i class="fa fa-circle-o"></i> Produk </a></li>
       <li><a href="?module=kategori"><i class="fa fa-circle-o"></i> Kategori </a></li>
-      <li><a href="?module=diskon"><i class="fa fa-circle-o"></i> Diskon </a></li>
       <li><a href="?module=ongkir"><i class="fa fa-circle-o"></i> Ongkir </a></li>
       <li><a href="?module=provinsi"><i class="fa fa-circle-o"></i> Provinsi </a></li>
       <li><a href="?module=kabupaten"><i class="fa fa-circle-o"></i> Kabupaten/Kota </a></li>
@@ -53,7 +52,6 @@ if ($_SESSION['hak_akses']=='Super Admin') { ?>
        <li><a href="?module=pelanggan"><i class="fa fa-circle-o"></i> Pelanggan </a></li>
       <li><a href="?module=produk"><i class="fa fa-circle-o"></i> Produk </a></li>
       <li><a href="?module=kategori"><i class="fa fa-circle-o"></i> Kategori </a></li>
-      <li><a href="?module=diskon"><i class="fa fa-circle-o"></i> Diskon </a></li>
       <li><a href="?module=ongkir"><i class="fa fa-circle-o"></i> Ongkir </a></li>
       <li><a href="?module=provinsi"><i class="fa fa-circle-o"></i> Provinsi </a></li>
       <li><a href="?module=kabupaten"><i class="fa fa-circle-o"></i> Kabupaten/Kota </a></li>
@@ -74,7 +72,6 @@ if ($_SESSION['hak_akses']=='Super Admin') { ?>
        <li><a href="?module=pelanggan"><i class="fa fa-circle-o"></i> Pelanggan </a></li>
       <li><a href="?module=produk"><i class="fa fa-circle-o"></i> Produk </a></li>
       <li><a href="?module=kategori"><i class="fa fa-circle-o"></i> Kategori </a></li>
-      <li><a href="?module=diskon"><i class="fa fa-circle-o"></i> Diskon </a></li>
       <li><a href="?module=ongkir"><i class="fa fa-circle-o"></i> Ongkir </a></li>
       <li><a href="?module=provinsi"><i class="fa fa-circle-o"></i> Provinsi </a></li>
       <li><a href="?module=kabupaten"><i class="fa fa-circle-o"></i> Kabupaten/Kota </a></li>
@@ -177,9 +174,9 @@ if ($_GET["module"]=="grafik") { ?>
       <i class="fa fa-file-text"></i> <span>Grafik</span> <i class="fa fa-angle-left pull-right"></i>
     </a>
     <ul class="treeview-menu">
-      <li class="active"><a href="?module=lap-pembelian"><i class="fa fa-circle-o"></i> Grafik pembelian </a></li>
-      <li><a href="?module=lap-pembayaran"><i class="fa fa-circle-o"></i> Grafik Pembayaran </a></li>
-      <li><a href="?module=lap-pengiriman"><i class="fa fa-circle-o"></i> Grafik pengiriman </a></li>
+      <li class="active"><a href="?module=grafik-pembelian"><i class="fa fa-circle-o"></i> Grafik pembelian </a></li>
+      <li><a href="?module=grafik-pembayaran"><i class="fa fa-circle-o"></i> Grafik Pembayaran </a></li>
+      <li><a href="?module=grafik-pengiriman"><i class="fa fa-circle-o"></i> Grafik pengiriman </a></li>
       
     </ul>
   </li>
@@ -192,9 +189,9 @@ if ($_GET["module"]=="grafik") { ?>
       <i class="fa fa-file-text"></i> <span>Grafik</span> <i class="fa fa-angle-left pull-right"></i>
     </a>
     <ul class="treeview-menu">
-      <li class="active"><a href="?module=lap-pembelian"><i class="fa fa-circle-o"></i> Grafik pembelian </a></li>
-      <li><a href="?module=lap-pembayaran"><i class="fa fa-circle-o"></i> Grafik Pembayaran </a></li>
-      <li><a href="?module=lap-pengiriman"><i class="fa fa-circle-o"></i> Grafik pengiriman </a></li>
+      <li class="active"><a href="?module=grafik-pembelian"><i class="fa fa-circle-o"></i> Grafik pembelian </a></li>
+      <li><a href="?module=grafik-pembayaran"><i class="fa fa-circle-o"></i> Grafik Pembayaran </a></li>
+      <li><a href="?module=grafik-pengiriman"><i class="fa fa-circle-o"></i> Grafik pengiriman </a></li>
     </ul>
   </li>
   <?php
@@ -207,9 +204,9 @@ if ($_GET["module"]=="grafik") { ?>
       <i class="fa fa-file-text"></i> <span>Grafik</span> <i class="fa fa-angle-left pull-right"></i>
     </a>
     <ul class="treeview-menu">
-      <li class="active"><a href="?module=lap-pembelian"><i class="fa fa-circle-o"></i> Grafik pembelian </a></li>
-      <li><a href="?module=lap-pembayaran"><i class="fa fa-circle-o"></i> Grafik Pembayaran </a></li>
-      <li><a href="?module=lap-pengiriman"><i class="fa fa-circle-o"></i> Grafik pengiriman </a></li>
+      <li class="active"><a href="?module=grafik-pembelian"><i class="fa fa-circle-o"></i> Grafik pembelian </a></li>
+      <li><a href="?module=grafik-pembayaran"><i class="fa fa-circle-o"></i> Grafik Pembayaran </a></li>
+      <li><a href="?module=grafik-pengiriman"><i class="fa fa-circle-o"></i> Grafik pengiriman </a></li>
       
     </ul>
   </li>

@@ -16,18 +16,17 @@ else {
             // ambil data hasil submit dari form
             $id_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['id_pelanggan']));
             $nama_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['nama_pelanggan']));
-            $email_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['email_pelanggan']));
-            $password_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['password_pelanggan']));
-            $no_telp = str_replace('.', '', mysqli_real_escape_string($mysqli, trim($_POST['no_telp'])));
+            $jenis_kelamin  = mysqli_real_escape_string($mysqli, trim($_POST['jenis_kelamin']));
             $alamat  = mysqli_real_escape_string($mysqli, trim($_POST['alamat']));
+            $no_telp = str_replace('.', '', mysqli_real_escape_string($mysqli, trim($_POST['no_telp'])));
            
 
             //$created_user = $_SESSION['id_user'];
 
             // perintah query untuk menyimpan data ke tabel obat
             //print_r($query);
-            $query = mysqli_query($mysqli, "INSERT INTO data_pelanggan(id_pelanggan,nama_pelanggan,email_pelanggan,password_pelanggan,no_telp,alamat)
-                VALUES ('$id_pelanggan','$nama_pelanggan','$email_pelanggan','$password_pelanggan','$alamat','$no_telp','$alamat')")
+            $query = mysqli_query($mysqli, "INSERT INTO pelanggan(id_pelanggan,nama_pelanggan,jenis_kelamin,alamat,no_telp)
+                VALUES ('$id_pelanggan','$nama_pelanggan','$jenis_kelamin','$alamat','$no_telp')")
                 or die('Ada kesalahan pada query insert : '.mysqli_error($mysqli));    
 
             // cek query
@@ -45,22 +44,20 @@ else {
                 // ambil data hasil submit dari form
             $id_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['id_pelanggan']));
             $nama_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['nama_pelanggan']));
-            $email_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['email_pelanggan']));
-            $password_pelanggan  = mysqli_real_escape_string($mysqli, trim($_POST['password_pelanggan']));
-            $no_telp = str_replace('.', '', mysqli_real_escape_string($mysqli, trim($_POST['no_telp'])));
+            $jenis_kelamin  = mysqli_real_escape_string($mysqli, trim($_POST['jenis_kelamin']));
             $alamat  = mysqli_real_escape_string($mysqli, trim($_POST['alamat']));
+            $no_telp = str_replace('.', '', mysqli_real_escape_string($mysqli, trim($_POST['no_telp'])));
            
+
 
                 //$updated_user = $_SESSION['id_user'];
 
                 // perintah query untuk mengubah data pada tabel obat
-                $query = mysqli_query($mysqli, "UPDATE data_pelanggan SET  id_pelanggan   = '$id_pelanggan',
+                $query = mysqli_query($mysqli, "UPDATE pelanggan SET  id_pelanggan   = '$id_pelanggan',
                                                                     nama_pelanggan       = '$nama_pelanggan',
-                                                                    email_pelanggan       = '$email_pelanggan',
-                                                                    password_pelanggan              = '$password_pelanggan',
-                                                                    no_telp             = '$no_telp',
-                                                                    alamat             = '$alamat'
-
+                                                                    jenis_kelamin       = '$jenis_kelamin',
+                                                                    alamat              = '$alamat',
+                                                                    no_telp             = '$no_telp'
                                                               WHERE id_pelanggan       = '$id_pelanggan'")
                                                 or die('Ada kesalahan pada query update : '.mysqli_error($mysqli));
 
@@ -78,7 +75,7 @@ else {
             $id_pelanggan = $_GET['id'];
     
             // perintah query untuk menghapus data pada tabel obat
-            $query = mysqli_query($mysqli, "DELETE FROM data_pelanggan WHERE id_pelanggan='$id_pelanggan'")
+            $query = mysqli_query($mysqli, "DELETE FROM pelanggan WHERE id_pelanggan='$id_pelanggan'")
                                             or die('Ada kesalahan pada query delete : '.mysqli_error($mysqli));
 
             // cek hasil query

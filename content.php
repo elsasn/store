@@ -159,7 +159,16 @@ else {
 		include "modules/lap-pengiriman/form.php";
 	}
 
-
+	elseif ($_GET['module'] == 'grafik-pembelian') {
+		include "modules/grafik/grafik_pembelian.php";
+	}
+	elseif ($_GET['module'] == 'grafik-pembayaran') {
+		include "modules/grafik/grafik_pembayaran.php";
+	}
+	elseif ($_GET['module'] == 'grafik-pengiriman') {
+		include "modules/grafik/grafik_pengiriman.php";
+	}
+	// jika halaman konten yang dipilih form user, panggil file form user
 	// -----------------------------------------------------------------------------
 	// jika halaman konten yang dipilih user, panggil file view user
 	elseif ($_GET['module'] == 'user') {
